@@ -33,9 +33,9 @@ namespace oopLearn
 			// tim.IntroduceMyself();
 
 			Box box1 = new Box();
-			box1.length = 10;
-			box1.height = 10;
-			box1.width = 10;
+			box1.SetLength(10);
+			//box1.height = 10;
+			//box1.width = 10;
 
 			box1.DisplayInfo();
 		}
