@@ -7,6 +7,8 @@ namespace oopLearn
         static void Main(string[] args) {
           // create a new instance
           Human jon = new Human();
+          jon.name = "Jon";
+          jon.IntroduceMyself();
         }
     }
 }
