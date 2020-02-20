@@ -6,12 +6,39 @@ namespace oopLearn
 		//member variable
 		private string firstName;
 		private string lastName;
+		private string eyeColor;
+		private int age;
 
-		//constructor
-		public Human(string firstName, string lastName) {
+		//default constructor
+		public Human(){
+
+		}
+
+				//paramaterized constructor
+		public Human(string firstName, string lastName, string eyeColor) {
+			this.firstName = firstName;
+			this.lastName = lastName;
+			this.eyeColor = eyeColor;
+		}
+
+			public Human(string firstName, string lastName) {
 			this.firstName = firstName;
 			this.lastName = lastName;
 		}
+
+			public Human(string firstName) {
+			this.firstName = firstName;
+		}
+
+		//paramaterized constructor
+		public Human(string firstName, string lastName, string eyeColor, int age) {
+			this.firstName = firstName;
+			this.lastName = lastName;
+			this.eyeColor = eyeColor;
+			this.age = age;
+		}
+
+	
 
 		//default assignment
 		//public string name = "Jon";
@@ -21,7 +48,18 @@ namespace oopLearn
 
 		//member method
 		public void IntroduceMyself(){
-			System.Console.WriteLine("Hi my name is {0} {1}", firstName, lastName);
+			if(age > 2){
+				System.Console.WriteLine("Hi my name is {0} {1} I have {2} eyes, and am {3} years old", firstName, lastName, eyeColor, age);
+			} else if (eyeColor != null) {
+				System.Console.WriteLine("Hi my name is {0} {1} i have {2} eyes", firstName, lastName, eyeColor);
+			} else if( lastName != null) {
+				System.Console.WriteLine("Hi my name is {0} {1}", firstName, lastName);
+			}	else if (firstName != null) {
+					System.Console.WriteLine("Hey my name is {0}", firstName);
+				}
+			 else {
+				System.Console.WriteLine("No info given");
+			}
 		}
 	}
 }
