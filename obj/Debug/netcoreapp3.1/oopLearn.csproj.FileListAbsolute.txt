@@ -1,0 +1,11 @@
+/home/maveryk/Desktop/code/oopLearn/bin/Debug/netcoreapp3.1/oopLearn
+/home/maveryk/Desktop/code/oopLearn/bin/Debug/netcoreapp3.1/oopLearn.deps.json
+/home/maveryk/Desktop/code/oopLearn/bin/Debug/netcoreapp3.1/oopLearn.runtimeconfig.json
+/home/maveryk/Desktop/code/oopLearn/bin/Debug/netcoreapp3.1/oopLearn.runtimeconfig.dev.json
+/home/maveryk/Desktop/code/oopLearn/bin/Debug/netcoreapp3.1/oopLearn.dll
+/home/maveryk/Desktop/code/oopLearn/bin/Debug/netcoreapp3.1/oopLearn.pdb
+/home/maveryk/Desktop/code/oopLearn/obj/Debug/netcoreapp3.1/oopLearn.csprojAssemblyReference.cache
+/home/maveryk/Desktop/code/oopLearn/obj/Debug/netcoreapp3.1/oopLearn.AssemblyInfoInputs.cache
+/home/maveryk/Desktop/code/oopLearn/obj/Debug/netcoreapp3.1/oopLearn.AssemblyInfo.cs
+/home/maveryk/Desktop/code/oopLearn/obj/Debug/netcoreapp3.1/oopLearn.dll
+/home/maveryk/Desktop/code/oopLearn/obj/Debug/netcoreapp3.1/oopLearn.pdb
