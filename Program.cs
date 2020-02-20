@@ -5,32 +5,39 @@ namespace oopLearn
   class Program {
 		static void Main(string[] args) {
 			// create a new instance
-			Human jon = new Human("John", "Smith", "Blue", 30);
-			//assign member variable
-			// jon.firstName = "Jon";
-			// jon.lastName = "Smith";
-			//call method duh
-			jon.IntroduceMyself();
+			// Human jon = new Human("John", "Smith", "Blue", 30);
+			// //assign member variable
+			// // jon.firstName = "Jon";
+			// // jon.lastName = "Smith";
+			// //call method duh
+			// jon.IntroduceMyself();
 
-			Human michael = new Human("Michael", "Richards", "Brown");
+			// Human michael = new Human("Michael", "Richards", "Brown");
 			// michael.firstName = "Michael";
 			// michael.lastName = "Richards";
 
-			michael.IntroduceMyself();
+			// michael.IntroduceMyself();
 
-			Human basic = new Human();
+			// Human basic = new Human();
 
-			basic.IntroduceMyself();
+			// basic.IntroduceMyself();
 
-			Human sarah = new Human("sarah", "Richards");
-
-
-			sarah.IntroduceMyself();
-
-			Human tim = new Human("Tim");
+			// Human sarah = new Human("sarah", "Richards");
 
 
-			tim.IntroduceMyself();
+			// sarah.IntroduceMyself();
+
+			// Human tim = new Human("Tim");
+
+
+			// tim.IntroduceMyself();
+
+			Box box1 = new Box();
+			box1.length = 10;
+			box1.height = 10;
+			box1.width = 10;
+
+			box1.DisplayInfo();
 		}
   }
 }
