@@ -32,12 +32,16 @@ namespace oopLearn
 
 			// tim.IntroduceMyself();
 
-			Box box1 = new Box(10, 10, 10);
+			// Box box1 = new Box(10, 10, 10);
 
-			box1.Width = 20;
-			System.Console.WriteLine("Box volume is {0}", box1.Volume);
-			box1.DisplayInfo();
-			System.Console.WriteLine(box1.FrontSurface);
+			// box1.Width = 20;
+			// System.Console.WriteLine("Box volume is {0}", box1.Volume);
+			// box1.DisplayInfo();
+			// System.Console.WriteLine(box1.FrontSurface);
+
+			// Members member1 = new Members();
+			// member1.Introducing(true);
+			
 		}
   }
 }
