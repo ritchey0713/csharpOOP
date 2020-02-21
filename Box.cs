@@ -49,6 +49,13 @@ namespace oopLearn {
 			// }
 		}
 
+		public Box(int length, int height, int width){
+			this.length = length;
+			this.height = height;
+			// uppercase since we didnt define it as a member
+			this.Width = width;
+		}
+
 		// //properties getters/setters if private only way another file can use it is if it inherits the box class
 		// public void SetLength(int length) {
 		// 	if(length < 1){
