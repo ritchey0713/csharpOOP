@@ -37,6 +37,7 @@ namespace oopLearn
 			box1.Width = 20;
 			System.Console.WriteLine("Box volume is {0}", box1.Volume);
 			box1.DisplayInfo();
+			System.Console.WriteLine(box1.FrontSurface);
 		}
   }
 }

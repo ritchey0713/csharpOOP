@@ -36,6 +36,13 @@ namespace oopLearn {
 			}
 		}
 
+		//read only property 
+		public int FrontSurface {
+			get {
+				return this.length * this.height;
+			}
+		}
+
 // using prop snippet default property
 		public int Width { get; set; }
 
