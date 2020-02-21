@@ -33,10 +33,10 @@ namespace oopLearn
 			// tim.IntroduceMyself();
 
 			Box box1 = new Box();
-			box1.SetLength(10);
-			//box1.height = 10;
-			//box1.width = 10;
-
+			box1.Length = 10;
+			box1.Height = 10;
+			box1.Width = 10;
+			System.Console.WriteLine("Box volume is {0}", box1.Volume);
 			box1.DisplayInfo();
 		}
   }
