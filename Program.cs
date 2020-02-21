@@ -41,7 +41,16 @@ namespace oopLearn
 
 			// Members member1 = new Members();
 			// member1.Introducing(true);
-			
+
+			// creating arrays 
+			int[] grades = new int[5];
+			grades[0] = 20;
+			grades[1] = 15;
+			grades[2] = 10;
+			grades[3] = 20;
+			grades[4] = 10;
+
+			System.Console.WriteLine(grades[3]);
 		}
   }
 }
