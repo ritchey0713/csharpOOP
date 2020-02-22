@@ -113,6 +113,56 @@ namespace oopLearn
 			};
 
 			System.Console.WriteLine("central value is {0}", array2D[1,1]);
+
+			//3d array must have same amount of rows in both
+			string[,,] array3D = new string[,,] {
+				{
+					{
+						"1", "2", "3"
+					},
+					{
+						"4", "5", "6"
+					},
+					{
+						"Hello!", "Hi", "what's up!"
+					}
+				},
+				{
+					{
+						"10", "11", "12"
+					},
+					{
+						"13", "14", "15"
+					},
+					{
+						"Goodbye!", "see ya!", "Later!"
+					}
+				}
+			};
+
+			System.Console.WriteLine("to get the 5 is {0}", array3D[0,1,1]);
+
+			System.Console.WriteLine("to get the 11 is {0}", array3D[1,0,1]);
+
+			System.Console.WriteLine("Say {0}!", array3D[0,2,0]);
+
+			System.Console.WriteLine("and now say {0}!", array3D[1,2,0]);
+
+
+			//specify demensions of matrix 
+
+			string[,] array2D2 = new string[3,2]{
+				{
+					"1", "2"
+				},
+				{
+					"3", "4"
+				},
+				{
+					"5", "6"
+				}
+			};
+
 		}
   }
 }
