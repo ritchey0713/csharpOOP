@@ -51,6 +51,48 @@ namespace oopLearn
 			grades[4] = 10;
 
 			System.Console.WriteLine(grades[3]);
+			
+			
+			// string input = Console.ReadLine();
+
+			// grades[3] = int.Parse(input);
+
+			// System.Console.WriteLine(grades[3]);
+
+			// int[] mathStudentsGrades = {20, 13, 21, 50, 9, 10};
+
+			// int[] mathStudentsGradesB = new int[] {20, 10, 6, 7, 30 };
+
+			// System.Console.WriteLine("Length of studen grades {0}", mathStudentsGrades.Length);
+
+			int[] nums = new int[10];
+
+			for(int i = 0; i < nums.Length; i++){
+				nums[i] = i;
+			}
+
+			for(int j = 0; j < nums.Length; j++){
+				System.Console.WriteLine(nums[j]);
+			}
+
+			//use counter to get index
+			int counter = 0;
+			foreach(int k in nums){
+				counter = k;
+				System.Console.WriteLine("element {0} =  {1}", counter, k);
+			}
+
+			string[] friends = new string[5];
+			friends[0] = "Brax";
+			friends[1] = "Chris";
+			friends[2] = "Erika";
+			friends[3] = "Tyler";
+			friends[4] = "Mike";
+
+			foreach(string x in friends){
+				System.Console.WriteLine("Hey there, {0}!", x);
+			}
+
 		}
   }
 }
