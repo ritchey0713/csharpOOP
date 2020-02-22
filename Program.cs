@@ -93,6 +93,26 @@ namespace oopLearn
 				System.Console.WriteLine("Hey there, {0}!", x);
 			}
 
+			// declare 2d array 
+			string[,] matrix;
+
+			//3d array 
+			int[,,] threeD;
+
+			//2d array 
+			int[,] array2D = new int[,] {
+				{
+					1, 2, 3 // row 0
+				},
+				{
+					4, 5, 6 //row 1
+				},
+				{
+					7, 8, 9  //row 2
+				}
+			};
+
+			System.Console.WriteLine("central value is {0}", array2D[1,1]);
 		}
   }
 }
