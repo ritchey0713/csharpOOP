@@ -339,6 +339,19 @@ namespace oopLearn
 
 			System.Console.WriteLine(post2.ToString());
 
+			VideoPost post3  = new VideoPost("video", "Youtube", "google.com", 2000, true);
+			//System.Console.WriteLine(post3.ToString());
+
+			post3.PlayVideo();
+
+			System.Console.WriteLine("Press any key to pause");
+			string input = Console.ReadLine();
+			post3.StopVideo();
+			
+			// if (input.ToLower().Equals("play")){
+			// 	post3.PlayVideo();
+			// }
+			
 		}
 
 		class Number {
