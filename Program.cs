@@ -351,6 +351,12 @@ namespace oopLearn
 			// if (input.ToLower().Equals("play")){
 			// 	post3.PlayVideo();
 			// }
+
+			//call employee
+			Employee employee = new Employee("Derek", "Sims", 20000);
+			employee.Work();
+
+			
 			
 		}
 
