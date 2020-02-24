@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace oopLearn
 {
@@ -253,11 +254,27 @@ namespace oopLearn
 			};
 
 
-			getHappiness(happiness);
+			// getHappiness(happiness);
 
-			foreach(int stage in happiness){
-				System.Console.WriteLine("Stage of happiness: {0}", stage);
-			}
+			// foreach(int stage in happiness){
+			// 	System.Console.WriteLine("Stage of happiness: {0}", stage);
+			// }
+
+			//declaring an arrayList with undefined amount of objs 
+			ArrayList myArrayList = new ArrayList();
+
+			//defined amount of objs 
+			ArrayList myArrayList2 = new ArrayList(100);
+
+			myArrayList.Add(25);
+			myArrayList.Add("Hello");
+			myArrayList.Add(25);
+			myArrayList.Add(13);
+			myArrayList.Add("Bye");
+			myArrayList.Add(13);
+
+			// delete element by pass passing value to Remove
+			myArrayList.Remove(13);
 		}
 
 			static double GetAverage(int[] gradesArray) {
