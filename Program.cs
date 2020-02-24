@@ -189,7 +189,52 @@ namespace oopLearn
 			// 	}
 			// };
 
-			
+			int[][] jaggedArr = new int[3][];
+			jaggedArr[0] = new int [5];
+			jaggedArr[1] = new int [3];
+			jaggedArr[2] = new int [1];
+
+			//initalizer 
+			jaggedArr[0] = new int[] {2,4,5,6,7};
+			jaggedArr[1] = new int[] {6,7,8};
+			jaggedArr[2] = new int[] {1};
+
+			//alt way 
+			int[][] jaggedarr2 = new int[][]{
+				new int[] {2,4,5,6,7},
+				new int[] {10, 100, -7}
+			};
+
+			// System.Console.WriteLine("the value of the middle element in the second array is {0}", jaggedarr2[1][1]);
+
+			foreach(int [] array in jaggedarr2){
+				foreach(int ele in array){
+					System.Console.WriteLine(ele);
+				}
+			}
+
+
+				// for(int i = 0; i < jaggedarr2.Length; i++){
+				// 	System.Console.WriteLine("ARRAY NUM: {0}", i);
+				// 	for(int j = 0; j < jaggedarr2[i].Length; j++){
+				// 		System.Console.WriteLine("ELE VALUE: {0}", jaggedarr2[i][j]);
+				// 	}
+				// }
+
+				string[][] jaggedarr3 = new string[][]{
+					new string[] {"Derek", "Doug", "Mrs. Maynard"},
+					new string[] {"Chris", "Mr. Hellickson", "Mrs. Hellickson"},
+					new string[] {"Mike", "Mr. Smith", "Mrs. Smith"}
+				};
+
+				for(int i = 0; i < jaggedarr3.Length; i++){
+						System.Console.WriteLine("My name is {0}", jaggedarr3[i][i]);
+					for(int j = 0; j < jaggedarr3[i].Length; j++){
+						System.Console.WriteLine("Hey! My name is {0}", jaggedarr3[j][j]);
+					}
+
+				}
+
 
 		}
   }
