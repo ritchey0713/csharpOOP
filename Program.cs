@@ -270,11 +270,35 @@ namespace oopLearn
 			myArrayList.Add("Hello");
 			myArrayList.Add(25);
 			myArrayList.Add(13);
+			myArrayList.Add(6.7453);
 			myArrayList.Add("Bye");
 			myArrayList.Add(13);
 
 			// delete element by pass passing value to Remove
 			myArrayList.Remove(13);
+
+			//delete ele at specific index 
+			myArrayList.RemoveAt(0);
+
+
+			System.Console.WriteLine("COUNT: {0}", myArrayList.Count);
+
+			double sum = 0;
+
+			// use object class type for array lists
+			foreach(object obj in myArrayList){
+				if(obj is int){
+					sum += Convert.ToDouble(obj);
+				} else if (obj is double) {
+					sum += (double)obj;
+				} else if (obj is string){
+					System.Console.WriteLine("STR {0}", obj);
+				}
+			}
+
+			System.Console.WriteLine("SUM {0}", sum);
+
+
 		}
 
 			static double GetAverage(int[] gradesArray) {
