@@ -221,21 +221,39 @@ namespace oopLearn
 				// 	}
 				// }
 
-				string[][] jaggedarr3 = new string[][]{
-					new string[] {"Derek", "Doug", "Mrs. Maynard"},
-					new string[] {"Chris", "Mr. Hellickson", "Mrs. Hellickson"},
-					new string[] {"Mike", "Mr. Smith", "Mrs. Smith"}
-				};
+				// string[][] jaggedarr3 = new string[][]{
+				// 	new string[] {"Derek", "Doug", "Mrs. Maynard"},
+				// 	new string[] {"Chris", "Mr. Hellickson", "Mrs. Hellickson"},
+				// 	new string[] {"Mike", "Mr. Smith", "Mrs. Smith"}
+				// };
 
-				for(int i = 0; i < jaggedarr3.Length; i++){
-						System.Console.WriteLine("My name is {0}", jaggedarr3[i][i]);
-					for(int j = 0; j < jaggedarr3[i].Length; j++){
-						System.Console.WriteLine("Hey! My name is {0}", jaggedarr3[j][j]);
-					}
+				// for(int i = 0; i < jaggedarr3.Length; i++){
+				// 		System.Console.WriteLine("My name is {0}", jaggedarr3[i][i]);
+				// 	for(int j = 0; j < jaggedarr3[i].Length; j++){
+				// 		System.Console.WriteLine("Hey! My name is {0}", jaggedarr3[j][j]);
+				// 	}
 
-				}
+				// }
 
+			int[] grades = new int[] {15, 13, 6, 12, 6, 16};
+
+			double results = GetAverage(grades);
+			System.Console.WriteLine("average is {0}", results);
 
 		}
+
+			static double GetAverage(int[] gradesArray) {
+					int size = gradesArray.Length;
+					double average; 
+					int sum = 0;
+
+					for(int i =0; i < size; i++){
+						sum += gradesArray[i];
+					}
+					// double(sum) => casts int as a double
+					average = (double)sum / size;
+					return average;
+				}
+
   }
 }
