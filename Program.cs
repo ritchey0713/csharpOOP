@@ -332,6 +332,9 @@ namespace oopLearn
 				System.Console.WriteLine(o);
 			}
 
+			Post post1 = new Post("New Post", true, "Anon");
+			System.Console.WriteLine(post1.ToString());
+
 		}
 
 		class Number {
