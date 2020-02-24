@@ -335,6 +335,10 @@ namespace oopLearn
 			Post post1 = new Post("New Post", true, "Anon");
 			System.Console.WriteLine(post1.ToString());
 
+			ImagePost post2 = new ImagePost("Image", "anon", "Image url" ,true );
+
+			System.Console.WriteLine(post2.ToString());
+
 		}
 
 		class Number {

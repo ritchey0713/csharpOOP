@@ -1,3 +1,5 @@
+using System;
+
 namespace oopLearn {
 	//inherits from post
 	public class ImagePost:Post {
@@ -13,6 +15,10 @@ namespace oopLearn {
 			this.SendByUsername = SendByUsername;
 			this.imageURL = imageURL;
 			this.IsPublic = isPublic;
+		}
+
+		public override string ToString(){
+			return String.Format("{0} - {1} at {2} by {3}", this.ID, this.Title, this.imageURL, this.SendByUsername);
 		}
 
     }
