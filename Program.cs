@@ -237,9 +237,27 @@ namespace oopLearn
 
 			int[] grades = new int[] {15, 13, 6, 12, 6, 16};
 
+			foreach(int grade in grades){
+				System.Console.WriteLine("  {0}   ", grade);
+			}
+
 			double results = GetAverage(grades);
 			System.Console.WriteLine("average is {0}", results);
 
+			int[] happiness = new int[] {
+				1,
+				2,
+				3,
+				4,
+				5
+			};
+
+
+			getHappiness(happiness);
+
+			foreach(int stage in happiness){
+				System.Console.WriteLine("Stage of happiness: {0}", stage);
+			}
 		}
 
 			static double GetAverage(int[] gradesArray) {
@@ -253,6 +271,14 @@ namespace oopLearn
 					// double(sum) => casts int as a double
 					average = (double)sum / size;
 					return average;
+				}
+
+				static void getHappiness(int[] happinessArray){
+					int size = happinessArray.Length;
+					for(int i = 0; i < size; i++){
+						happinessArray[i] += 2;
+					}
+
 				}
 
   }
