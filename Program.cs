@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace oopLearn
 {
@@ -286,17 +287,35 @@ namespace oopLearn
 			double sum = 0;
 
 			// use object class type for array lists
-			foreach(object obj in myArrayList){
-				if(obj is int){
-					sum += Convert.ToDouble(obj);
-				} else if (obj is double) {
-					sum += (double)obj;
-				} else if (obj is string){
-					System.Console.WriteLine("STR {0}", obj);
-				}
+			// foreach(object obj in myArrayList){
+			// 	if(obj is int){
+			// 		sum += Convert.ToDouble(obj);
+			// 	} else if (obj is double) {
+			// 		sum += (double)obj;
+			// 	} else if (obj is string){
+			// 		System.Console.WriteLine("STR {0}", obj);
+			// 	}
+			// }
+
+			// System.Console.WriteLine("SUM {0}", sum);
+
+			//list 
+			List<int> list = new List<int> {1,2,3,4,5};
+			//adds to end of the list 
+			list.Add(0);
+			list.Add(6);
+			list.Sort();
+			list.RemoveRange(0,2);
+
+			foreach(int i in list){
+				System.Console.WriteLine("Num: {0}", i);
 			}
 
-			System.Console.WriteLine("SUM {0}", sum);
+			System.Console.WriteLine(list.Contains(4));
+			// find index of element matching expression, ie what index is the num 4 located at
+			int index = list.FindIndex(x => x == 4);
+			
+			System.Console.WriteLine(list[index]);
 
 
 		}
