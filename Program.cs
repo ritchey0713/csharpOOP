@@ -300,53 +300,53 @@ namespace oopLearn
 			// System.Console.WriteLine("SUM {0}", sum);
 
 			//list 
-			List<int> list = new List<int> {1,2,3,4,5};
-			//adds to end of the list 
-			list.Add(0);
-			list.Add(6);
-			list.Sort();
-			list.RemoveRange(0,2);
+			// List<int> list = new List<int> {1,2,3,4,5};
+			// //adds to end of the list 
+			// list.Add(0);
+			// list.Add(6);
+			// list.Sort();
+			// list.RemoveRange(0,2);
 
-			foreach(int i in list){
-				System.Console.WriteLine("Num: {0}", i);
-			}
+			// foreach(int i in list){
+			// 	System.Console.WriteLine("Num: {0}", i);
+			// }
 
-			System.Console.WriteLine(list.Contains(4));
-			// find index of element matching expression, ie what index is the num 4 located at
-			int index = list.FindIndex(x => x == 4);
+			// System.Console.WriteLine(list.Contains(4));
+			// // find index of element matching expression, ie what index is the num 4 located at
+			// int index = list.FindIndex(x => x == 4);
 			
-			System.Console.WriteLine(list[index]);
+			// System.Console.WriteLine(list[index]);
 
-			list.RemoveAt(index);
+			// list.RemoveAt(index);
 
-			list.ForEach(i => System.Console.WriteLine(i));
+			// list.ForEach(i => System.Console.WriteLine(i));
 
-			//array list 
-			ArrayList arrayList4 = new ArrayList();
-			arrayList4.Add(1);
-			arrayList4.Add(10);
-			arrayList4.Add("3");
-			arrayList4.Add(new Number {n = 4} );
+			// //array list 
+			// ArrayList arrayList4 = new ArrayList();
+			// arrayList4.Add(1);
+			// arrayList4.Add(10);
+			// arrayList4.Add("3");
+			// arrayList4.Add(new Number {n = 4} );
 
-			foreach(object o in arrayList4){
-				System.Console.WriteLine(o);
-			}
+			// foreach(object o in arrayList4){
+			// 	System.Console.WriteLine(o);
+			// }
 
-			Post post1 = new Post("New Post", true, "Anon");
-			System.Console.WriteLine(post1.ToString());
+			// Post post1 = new Post("New Post", true, "Anon");
+			// System.Console.WriteLine(post1.ToString());
 
-			ImagePost post2 = new ImagePost("Image", "anon", "Image url" ,true );
+			// ImagePost post2 = new ImagePost("Image", "anon", "Image url" ,true );
 
-			System.Console.WriteLine(post2.ToString());
+			// System.Console.WriteLine(post2.ToString());
 
-			VideoPost post3  = new VideoPost("video", "Youtube", "google.com", 2000, true);
-			//System.Console.WriteLine(post3.ToString());
+			// VideoPost post3  = new VideoPost("video", "Youtube", "google.com", 2000, true);
+			// //System.Console.WriteLine(post3.ToString());
 
-			post3.PlayVideo();
+			// post3.PlayVideo();
 
-			System.Console.WriteLine("Press any key to pause");
-			string input = Console.ReadLine();
-			post3.StopVideo();
+			// System.Console.WriteLine("Press any key to pause");
+			// string input = Console.ReadLine();
+			// post3.StopVideo();
 			
 			// if (input.ToLower().Equals("play")){
 			// 	post3.PlayVideo();
