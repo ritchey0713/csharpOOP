@@ -317,7 +317,31 @@ namespace oopLearn
 			
 			System.Console.WriteLine(list[index]);
 
+			list.RemoveAt(index);
 
+			list.ForEach(i => System.Console.WriteLine(i));
+
+			//array list 
+			ArrayList arrayList4 = new ArrayList();
+			arrayList4.Add(1);
+			arrayList4.Add(10);
+			arrayList4.Add("3");
+			arrayList4.Add(new Number {n = 4} );
+
+			foreach(object o in arrayList4){
+				System.Console.WriteLine(o);
+			}
+
+		}
+
+		class Number {
+			public int n {get; set;}
+
+
+			// NEED THIS TO GET THAT ARRAYLIST TO PRINT NUM 4
+			public override string ToString(){
+				return n.ToString();
+			}
 		}
 
 			static double GetAverage(int[] gradesArray) {
