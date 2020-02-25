@@ -1,4 +1,6 @@
 namespace oopLearn {
+
+	//this is a IS A type of relationship a bmw IS A car
     public class Bmw:Car {
       private string Brand = "Bmw";
 
