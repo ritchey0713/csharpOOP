@@ -446,6 +446,9 @@ namespace oopLearn
 			Car car2 = (Car)bmw3;
 			car2.Repair();
 
+			M3 myM3 = new M3(300, "red", "M3");
+			myM3.Repair();
+
 
 			
 		}

@@ -16,7 +16,7 @@ namespace oopLearn {
 				System.Console.WriteLine("The awesome {0} {1} has {2} hp and is {3}", this.Brand, this.Model, this.HP, this.Color);
 			}
 
-			public void Repair(){
+			public sealed override void Repair(){
 				System.Console.WriteLine("The awesome {0} has been repaired, enjoy your dollar ramen for the rest of the month LOL", this.Model);
 			}
     }

@@ -16,7 +16,7 @@ namespace oopLearn {
 				System.Console.WriteLine("car color: {0}, HP: {1}", this.Color, this.HP);
 			}
 
-			public void Repair(){
+			public virtual void Repair(){
 				System.Console.WriteLine("Car repaired!");
 			}
         
