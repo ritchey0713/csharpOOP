@@ -356,7 +356,8 @@ namespace oopLearn
 			Employee employee = new Employee("Derek", "Sims", 20000);
 			employee.Work();
 
-			
+			// Boss boss = new Boss("Sally", "Sims", 2000000, )
+
 			
 		}
 
