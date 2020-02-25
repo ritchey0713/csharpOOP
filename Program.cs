@@ -411,6 +411,26 @@ namespace oopLearn
 			note.showNotification();
 			note2.showNotification();
 
+			// Car car = new Car(300, "black");
+			// car.ShowDetails();
+
+			// Audi audi = new Audi(300, "blue", "R8");
+			// audi.ShowDetails();
+
+			// Bmw bmw = new Bmw(550, "White", "780i");
+			// bmw.ShowDetails();
+			
+			var cars = new List<Car> {
+				new Car(300, "black"),
+				new Audi(300, "blue", "R8"),
+				new Bmw(550, "White", "780i")
+			};
+
+			foreach(var car in cars){
+					car.ShowDetails();
+			}
+
+
 			
 		}
 
