@@ -3,6 +3,7 @@ namespace oopLearn {
       protected string CompanyCar {get; set;}
 
 			public Boss(string firstName, string lastName, int salary, string companyCar){
+				this.ID = GetNextID();
 				this.FirstName = firstName;
 				this.LastName = lastName;
 				this.Salary = salary;
