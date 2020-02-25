@@ -3,6 +3,18 @@ namespace oopLearn {
 			protected int HP {get; set;}
 			protected string Color {get; set;}
 
+			// set up has a relationship 
+			protected CarIDInfo carIDInfo = new CarIDInfo();
+
+			public void SetCarIDInfo(int idNum, string owner){
+				carIDInfo.IDNum = idNum;
+				carIDInfo.Owner = owner;
+			}
+
+			public void GetCarIDInfo(){
+				
+			}
+
 			public Car() {
 
 			}
