@@ -4,8 +4,50 @@ using System.Collections.Generic;
 
 namespace oopLearn
 {
+
+// if inheriting from interface you choose what methods HAVE to be included in the inheriting class
+// useful when only a small amount of things should be inherited, ie when you shouldnt have a full class to inherit from
+// interface = what to do 
+// class that inherits, how to do it
+	public interface INotifications {
+		void showNotification();
+		string getDate();
+			
+	}
+
+	public class Notification:INotifications {
+		private string sender;
+		private string message;
+		private string date;
+
+		public Notification() {
+			this.sender = "Admin";
+			this.message="Hello!";
+			this.date = " ";
+		}
+
+		public Notification(string mySender, string myMessage, string myDate){
+			this.sender = mySender;
+			this.message= myMessage;
+			this.date = myDate;
+		}
+
+		
+		public void showNotification(){
+			System.Console.WriteLine("Message {0} sent by {1} at {2}", this.message, this.sender, this.date);
+		}
+		public string getDate(){
+			return this.date;
+		}
+
+	}
+
   class Program {
 		static void Main(string[] args) {
+
+
+
+
 			// create a new instance
 			// Human jon = new Human("John", "Smith", "Blue", 30);
 			// //assign member variable
@@ -362,6 +404,12 @@ namespace oopLearn
 
 			Trainee trainee = new Trainee("Chris", "Cross", 5000, "9-12", "12-8");
 			trainee.Work();
+
+			Notification note = new Notification("Denny", "Sup?", DateTime.Now.ToString());
+			Notification note2 = new Notification("Sarah", "Hi", DateTime.Now.ToString());
+
+			note.showNotification();
+			note2.showNotification();
 
 			
 		}

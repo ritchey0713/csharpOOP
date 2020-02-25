@@ -10,7 +10,7 @@ namespace oopLearn {
 
 			protected int ID {get; set;}
 
-			public virtual void Work(){
+			public void Work(){
 				System.Console.WriteLine("{0} works from 9 - 5 making {1} a year", this.FirstName, this.Salary);
 			}
 
