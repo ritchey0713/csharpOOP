@@ -419,7 +419,9 @@ namespace oopLearn
 
 			// Bmw bmw = new Bmw(550, "White", "780i");
 			// bmw.ShowDetails();
-			
+
+
+			// polymorph - use virtual on method in base to allow inherited classes modify the method. 
 			var cars = new List<Car> {
 				new Car(300, "black"),
 				new Audi(300, "blue", "R8"),
@@ -429,6 +431,20 @@ namespace oopLearn
 			foreach(var car in cars){
 					car.ShowDetails();
 			}
+
+			Car bmw2 = new Bmw(300, "green", "3 series");
+			Car audi2 = new Audi(500, "Purple", "r6");
+			bmw2.Repair();
+			audi2.Repair();
+
+			// if you build a new instance by telling its type is the inheriting class no need to override/virutal methods
+			Bmw bmw3 = new Bmw(245, "white", "compressor");
+			bmw3.Repair();
+
+
+			// can cast a inherited obj back to its base class
+			Car car2 = (Car)bmw3;
+			car2.Repair();
 
 
 			

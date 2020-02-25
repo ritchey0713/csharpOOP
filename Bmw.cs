@@ -12,7 +12,7 @@ namespace oopLearn {
 				this.Model = model;
 			}
 
-			public void ShowDetails(){
+			public override void ShowDetails(){
 				System.Console.WriteLine("The awesome {0} {1} has {2} hp and is {3}", this.Brand, this.Model, this.HP, this.Color);
 			}
 

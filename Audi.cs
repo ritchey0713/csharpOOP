@@ -10,11 +10,11 @@ namespace oopLearn{
 				this.Model = model;
 			}
 
-			public void ShowDetails(){
+			public override void ShowDetails(){
 				System.Console.WriteLine("The {0} {1} has {2} hp and is {3}", this.Brand, this.Model, this.HP, this.Color);
 			}
 
-			public void Repair(){
+			public new void Repair(){
 				System.Console.WriteLine("The {0} is repaired! ouch..", this.Model);
 			}
     }

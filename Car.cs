@@ -12,7 +12,7 @@ namespace oopLearn {
 				this.Color = color;
 			}
 
-			public void ShowDetails(){
+			public virtual void ShowDetails(){
 				System.Console.WriteLine("car color: {0}, HP: {1}", this.Color, this.HP);
 			}
 
