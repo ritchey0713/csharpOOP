@@ -524,7 +524,10 @@ namespace oopLearn
 			//gives full control over app, via variables and methods
 
 		
-
+			// math class 
+			//round up 
+			System.Console.WriteLine("Cealing: {0}", Math.Ceiling(15.2));
+			System.Console.WriteLine("floor: {0}", Math.Floor(15.3));
 
 			
 		}
