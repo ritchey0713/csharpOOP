@@ -5,6 +5,11 @@ using System.Collections.Generic;
 namespace oopLearn
 {
 
+
+// enums 
+	enum Day {Mon, Tues, Weds, Thur, Fri, Sat, Sun}
+	enum Months {Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec}
+
 // if inheriting from interface you choose what methods HAVE to be included in the inheriting class
 // useful when only a small amount of things should be inherited, ie when you shouldnt have a full class to inherit from
 // interface = what to do 
@@ -43,12 +48,30 @@ namespace oopLearn
 	}
 
 	//structs 
+	// cannot create empty constructor, must set all properties before calling methods
+	// cannot have null ref
+	// can have interface
+	// no inheritance 
 
-		struct Game {
+		public struct Game {
 				public string name; 
 				public string developer;
 				public double rating; 
 				public string releaseDate;
+
+				public Game(string name, string developer, double rating, string releaseDate){
+					this.name = name;
+					this.developer = developer;
+					this.rating = rating;
+					this.releaseDate = releaseDate;
+				}
+
+				public void Display(){
+						System.Console.WriteLine("game name: {0}", this.name);
+						System.Console.WriteLine("game dev: {0}", this.developer);
+						System.Console.WriteLine("game rating: {0}", this.rating);
+						System.Console.WriteLine("game released: {0}", this.releaseDate);
+				}
 			}
 
   class Program {
@@ -60,7 +83,20 @@ namespace oopLearn
 			game1.rating = 4.7;
 			game1.releaseDate = "Mar 21 2019";
 
-			System.Console.WriteLine(game1.name);
+			game1.Display();
+
+			//enums 
+				Day fr = Day.Fri;
+				Day su = Day.Sun;
+
+				Day a = Day.Fri;
+
+				System.Console.WriteLine(fr == a);
+
+
+				System.Console.WriteLine("the day is {0}", Day.Mon);
+				System.Console.WriteLine((int)Day.Mon);
+		
 
 
 
