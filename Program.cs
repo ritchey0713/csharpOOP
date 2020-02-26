@@ -529,6 +529,23 @@ namespace oopLearn
 			System.Console.WriteLine("Cealing: {0}", Math.Ceiling(15.2));
 			System.Console.WriteLine("floor: {0}", Math.Floor(15.3));
 
+			int num1 = 1;
+			int num2 = 12;
+
+			System.Console.WriteLine("Lower of nums is {0}", Math.Min(num1, num2));
+
+			System.Console.WriteLine("Higher num is {0}", Math.Max(num1, num2));
+
+			System.Console.WriteLine("3 to the power of 5 is {0}", Math.Pow(3,5));
+
+			System.Console.WriteLine("pi is {0}", Math.PI);
+
+			System.Console.WriteLine("square root of 25 is {0}", Math.Sqrt(25));
+
+			System.Console.WriteLine("Absolute val of -1000 is {0}", Math.Abs(-1000));
+
+			System.Console.WriteLine("Cos of 1 is {0}", Math.Cos(1));
+
 			
 		}
 
