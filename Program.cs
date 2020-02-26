@@ -42,8 +42,25 @@ namespace oopLearn
 
 	}
 
+	//structs 
+
+		struct Game {
+				public string name; 
+				public string developer;
+				public double rating; 
+				public string releaseDate;
+			}
+
   class Program {
 		static void Main(string[] args) {
+
+			Game game1;
+			game1.name = "Pokemon";
+			game1.developer = "Niantic";
+			game1.rating = 4.7;
+			game1.releaseDate = "Mar 21 2019";
+
+			System.Console.WriteLine(game1.name);
 
 
 
@@ -462,7 +479,13 @@ namespace oopLearn
 			//access mod, private means unable to be used outside the class 
 			// public avail everywhere in project 
 			// protected avail by class and all classes inheriting from that class
-			
+
+			//internal acessable from own assembly(project)
+			// start with most restrictive and relax until the use is available 
+			//gives full control over app, via variables and methods
+
+		
+
 
 			
 		}
