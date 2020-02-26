@@ -422,6 +422,8 @@ namespace oopLearn
 
 
 			// polymorph - use virtual on method in base to allow inherited classes modify the method. 
+			// in this list these cars are seen as all Car objs
+			// using virtual and override allow us to display different showdetails() below
 			var cars = new List<Car> {
 				new Car(300, "black"),
 				new Audi(300, "blue", "R8"),
@@ -437,6 +439,8 @@ namespace oopLearn
 			bmw2.Repair();
 			audi2.Repair();
 
+			
+
 			// if you build a new instance by telling its type is the inheriting class no need to override/virutal methods
 			Bmw bmw3 = new Bmw(245, "white", "compressor");
 			bmw3.Repair();
@@ -449,6 +453,11 @@ namespace oopLearn
 			M3 myM3 = new M3(300, "red", "M3");
 			myM3.Repair();
 
+			bmw2.SetCarIDInfo(11, "John");
+			audi2.SetCarIDInfo(123, "Sally");
+
+			bmw2.GetCarIDInfo();
+			audi2.GetCarIDInfo();
 
 			
 		}

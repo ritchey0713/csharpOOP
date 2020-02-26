@@ -12,7 +12,7 @@ namespace oopLearn {
 			}
 
 			public void GetCarIDInfo(){
-				
+				System.Console.WriteLine("Car has an ID of {0} and is owned by {1}", carIDInfo.IDNum, carIDInfo.Owner);
 			}
 
 			public Car() {
