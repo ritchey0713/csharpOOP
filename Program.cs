@@ -459,6 +459,11 @@ namespace oopLearn
 			bmw2.GetCarIDInfo();
 			audi2.GetCarIDInfo();
 
+			//access mod, private means unable to be used outside the class 
+			// public avail everywhere in project 
+			// protected avail by class and all classes inheriting from that class
+			
+
 			
 		}
 
