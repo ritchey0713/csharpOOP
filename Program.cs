@@ -8,7 +8,8 @@ namespace oopLearn
 
 // enums 
 	enum Day {Mon, Tues, Weds, Thur, Fri, Sat, Sun}
-	enum Months {Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec}
+	//reassigning emun index
+	enum Months {Jan = 1, Feb, Mar, Apr, May, Jun, Jul = 12, Aug, Sep, Oct, Nov, Dec}
 
 // if inheriting from interface you choose what methods HAVE to be included in the inheriting class
 // useful when only a small amount of things should be inherited, ie when you shouldnt have a full class to inherit from
@@ -96,6 +97,8 @@ namespace oopLearn
 
 				System.Console.WriteLine("the day is {0}", Day.Mon);
 				System.Console.WriteLine((int)Day.Mon);
+
+				System.Console.WriteLine((int)Months.Aug);
 		
 
 
