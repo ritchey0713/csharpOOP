@@ -658,6 +658,8 @@ namespace oopLearn
 			System.Console.WriteLine(num22);
 
 
+		// garbage collector auto with .net
+
 
 		} //</main>
 
