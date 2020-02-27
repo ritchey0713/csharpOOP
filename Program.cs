@@ -546,7 +546,37 @@ namespace oopLearn
 
 			System.Console.WriteLine("Cos of 1 is {0}", Math.Cos(1));
 
-			
+			// random class 
+			Random dice = new Random();
+
+			int numEyes;
+
+			for(int i = 0; i < 10; i++){
+				// next takes in a min and max
+				numEyes = dice.Next(1,7);
+				System.Console.WriteLine("die roll is {0}", numEyes);
+			}
+
+			// fortune teller 
+			Random fortuneTeller = new Random();
+			int fortune; 
+
+			for(int j = 0; j < 10; j++){
+				fortune = fortuneTeller.Next(1,4);
+				switch(fortune){
+					case 1: 
+						System.Console.WriteLine("Yes");
+						break;
+					case 2: 
+						System.Console.WriteLine("No");
+						break;
+					case 3:
+						System.Console.WriteLine("Maybe");
+						break;
+					default:
+						break;
+				}
+			}			
 		}
 
 		class Number {
