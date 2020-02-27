@@ -663,6 +663,15 @@ namespace oopLearn
 		// abstract cant create abstract objs 
 	//	Shape shape1 = new Shape();
 
+		Shape[] shapes = {new Sphere(10), new Cube(5)};
+
+		// Sphere sphere = new Sphere(10);
+
+		// sphere.GetInfo();
+
+		foreach(Shape shape in shapes){
+			shape.GetInfo();
+		}
 
 		} //</main>
 
