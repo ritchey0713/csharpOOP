@@ -680,13 +680,17 @@ namespace oopLearn
 			} 
 
 			if(shape is Cube){
+				
 				System.Console.WriteLine("now this is a cube!");
 			}
 		}
 
+		// can cast object type to any other object type
 		object cube1 = new Cube(7);
 
 		Cube cube2 = (Cube)cube1;
+
+		System.Console.WriteLine("Has a volume of {0}", cube2.Volume());
 
 		} //</main>
 
