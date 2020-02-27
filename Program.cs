@@ -598,6 +598,15 @@ namespace oopLearn
 
 			System.Console.WriteLine("My favorite day is {0}", DateTime.Today);
 
+			DateTime tomorrow = GetTomorrow();
+
+			System.Console.WriteLine(GetFirstDayOfYear(1990));
+			
+			System.Console.WriteLine("tomorrow is {0}", dateTime.DayOfWeek);
+
+			int days = DateTime.DaysInMonth(2000, 2);
+
+			System.Console.WriteLine(days);
 
 
 
@@ -607,15 +616,13 @@ namespace oopLearn
 		} //</main>
 
 
+		static DateTime GetTomorrow(){
+			return DateTime.Today.AddDays(1);
+		}
 
-	
-
-
-		
-
-
-
-
+		static DateTime GetFirstDayOfYear(int year){
+			return new DateTime(year, 1,1);
+		}
 		class Number {
 			public int n {get; set;}
 
