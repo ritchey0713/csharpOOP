@@ -671,7 +671,21 @@ namespace oopLearn
 
 		foreach(Shape shape in shapes){
 			shape.GetInfo();
+
+			// as tries to perform cast, if it cant, it will return null, here cube and sphere are different data types so it wont cast them to each other
+			Cube iceCube = shape as Cube;
+			if(iceCube == null){
+				System.Console.WriteLine("this shape is no cube!");
+			} 
+
+			if(shape is Cube){
+				System.Console.WriteLine("now this is a cube!");
+			}
 		}
+
+		object cube1 = new Cube(7);
+
+		Cube cube2 = (Cube)cube1;
 
 		} //</main>
 
