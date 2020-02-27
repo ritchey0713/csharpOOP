@@ -1,4 +1,5 @@
 using System;
+using System.Text.RegularExpressions;
 
 namespace oopLearn
 {
@@ -37,6 +38,17 @@ namespace oopLearn
 			this.eyeColor = eyeColor;
 			this.age = age;
 		}
+
+					public void findMatches(){
+				string pattern = @"\d";
+				Regex regex = new Regex(pattern);
+
+				string text = "Hi there my num is 123123123";
+
+				MatchCollection matchCollection = regex.Matches(text);
+
+				System.Console.WriteLine("Hits found {0} \n {1}", matchCollection.Count, text);
+			}
 
 	
 

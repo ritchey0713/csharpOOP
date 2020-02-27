@@ -1,5 +1,6 @@
 using System.Diagnostics;
 
+
 namespace oopLearn {
     public class Members {
 			// private member / field 
@@ -31,6 +32,8 @@ namespace oopLearn {
 			private void SharingPrivateInfo(){
 				System.Console.WriteLine("My Salary is {0}", this.salary);
 			}
+
+
 
 			// constructor 
 			public Members() {

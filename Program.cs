@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
 namespace oopLearn
 {
 
@@ -112,7 +113,9 @@ namespace oopLearn
 			// //call method duh
 			// jon.IntroduceMyself();
 
-			// Human michael = new Human("Michael", "Richards", "Brown");
+			Human michael = new Human("Michael", "Richards", "Brown");
+
+			
 			// michael.firstName = "Michael";
 			// michael.lastName = "Richards";
 
@@ -584,7 +587,15 @@ namespace oopLearn
 		//\d{3}[.#-]\d{3}[.#-]\d{4}
 		//german numbers 
 		// \+\d{5}\/\d{8}|^\d{4}[\/]\d{8}|^\d{7}\/\d{8}
-	
+
+		Human testMatch = new Human();
+
+
+
+
+		
+
+
 
 
 		class Number {
