@@ -608,6 +608,22 @@ namespace oopLearn
 
 			System.Console.WriteLine(days);
 
+			DateTime now = DateTime.Now;
+
+			System.Console.WriteLine("the minute is {0}", now.Minute);
+
+			System.Console.WriteLine("Current time is: {0} o'clock {1} minutes, and {2} seconds", now.Hour, now.Minute, now.Second);
+
+			System.Console.WriteLine("write the date in this format yyyy-mm-dd");
+			string input = Console.ReadLine();
+			if(DateTime.TryParse(input, out dateTime)){
+				System.Console.WriteLine(dateTime);
+				TimeSpan daysPassed = now.Subtract(dateTime);
+				System.Console.WriteLine("days passed {0}", daysPassed.Days);
+			} else {
+				System.Console.WriteLine("wrong format");
+			}
+
 
 
 
