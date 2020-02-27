@@ -614,18 +614,48 @@ namespace oopLearn
 
 			System.Console.WriteLine("Current time is: {0} o'clock {1} minutes, and {2} seconds", now.Hour, now.Minute, now.Second);
 
-			System.Console.WriteLine("write the date in this format yyyy-mm-dd");
-			string input = Console.ReadLine();
-			if(DateTime.TryParse(input, out dateTime)){
-				System.Console.WriteLine(dateTime);
-				TimeSpan daysPassed = now.Subtract(dateTime);
-				System.Console.WriteLine("days passed {0}", daysPassed.Days);
+			// System.Console.WriteLine("write the date in this format yyyy-mm-dd");
+			// string input = Console.ReadLine();
+			// if(DateTime.TryParse(input, out dateTime)){
+			// 	System.Console.WriteLine(dateTime);
+			// 	TimeSpan daysPassed = now.Subtract(dateTime);
+			// 	System.Console.WriteLine("days passed {0}", daysPassed.Days);
+			// } else {
+			// 	System.Console.WriteLine("wrong format");
+			// }
+
+			//nullables 
+			int? nullNum = null;
+			int? nullNum2 = 1234;
+
+			double? nullDouble = new Double();
+			double? nullDouble2 = 1234.4353543;
+
+			bool? isPerson = null;
+
+			if(isPerson == true){
+				System.Console.WriteLine("Hello person");
+			} else if (isPerson == false){
+				System.Console.WriteLine("Are you a robot?");
 			} else {
-				System.Console.WriteLine("wrong format");
+				System.Console.WriteLine("Im not sure what you are");
 			}
 
+			double? num20 = 2.6;
+			double? num21 = null;
+			double num22 = 20.6;
 
+			if(num20 == null){
+				num22 = 0.0;
+			} else {
+				num22 = (double)num20;
+			}
 
+			System.Console.WriteLine(num22);
+			// null coalescing operator - converts non nullable to nullable if left of ?? is null assigns right side, like ||= in ruby
+			num22 = num20 ?? 8.11;
+
+			System.Console.WriteLine(num22);
 
 
 
