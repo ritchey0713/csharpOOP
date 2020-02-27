@@ -593,6 +593,15 @@ namespace oopLearn
 
 			testMatch.findMatches();
 
+			//date time 
+			DateTime dateTime = new DateTime(2018, 4, 9);
+
+			System.Console.WriteLine("My favorite day is {0}", DateTime.Today);
+
+
+
+
+
 
 
 		} //</main>
