@@ -660,6 +660,9 @@ namespace oopLearn
 
 		// garbage collector auto with .net
 
+		// abstract cant create abstract objs 
+	//	Shape shape1 = new Shape();
+
 
 		} //</main>
 
