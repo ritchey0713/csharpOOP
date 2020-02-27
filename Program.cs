@@ -119,7 +119,8 @@ namespace oopLearn
 			// michael.firstName = "Michael";
 			// michael.lastName = "Richards";
 
-			// michael.IntroduceMyself();
+			michael.IntroduceMyself();
+			michael.findMatches();
 
 			// Human basic = new Human();
 
@@ -526,7 +527,7 @@ namespace oopLearn
 			// start with most restrictive and relax until the use is available 
 			//gives full control over app, via variables and methods
 
-		
+	
 			// math class 
 			//round up 
 			System.Console.WriteLine("Cealing: {0}", Math.Ceiling(15.2));
@@ -579,8 +580,16 @@ namespace oopLearn
 					default:
 						break;
 				}
-			}			
-		}
+			}	
+
+
+					Human testMatch = new Human();
+
+			testMatch.IntroduceMyself();
+
+
+
+		} //</main>
 
 		//regex 
 		// phone num select 
@@ -588,9 +597,7 @@ namespace oopLearn
 		//german numbers 
 		// \+\d{5}\/\d{8}|^\d{4}[\/]\d{8}|^\d{7}\/\d{8}
 
-		Human testMatch = new Human();
-
-
+	
 
 
 		
