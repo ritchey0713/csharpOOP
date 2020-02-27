@@ -39,6 +39,7 @@ namespace oopLearn
 			this.age = age;
 		}
 
+					//Regex FINDER
 					public void findMatches(){
 				string pattern = @"\d";
 				Regex regex = new Regex(pattern);
@@ -48,6 +49,12 @@ namespace oopLearn
 				MatchCollection matchCollection = regex.Matches(text);
 
 				System.Console.WriteLine("Hits found {0} \n {1}", matchCollection.Count, text);
+
+				foreach(Match hit in matchCollection){
+					GroupCollection group = hit.Groups;
+
+					System.Console.WriteLine("hit: {0} found at {1}", group[0].Value, group[0].Index);
+				}
 			}
 
 	

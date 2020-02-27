@@ -585,17 +585,19 @@ namespace oopLearn
 
 					Human testMatch = new Human();
 
-			testMatch.IntroduceMyself();
+							//regex 
+		// phone num select 
+		//\d{3}[.#-]\d{3}[.#-]\d{4}
+		//german numbers 
+		// \+\d{5}\/\d{8}|^\d{4}[\/]\d{8}|^\d{7}\/\d{8}
+
+			testMatch.findMatches();
 
 
 
 		} //</main>
 
-		//regex 
-		// phone num select 
-		//\d{3}[.#-]\d{3}[.#-]\d{4}
-		//german numbers 
-		// \+\d{5}\/\d{8}|^\d{4}[\/]\d{8}|^\d{7}\/\d{8}
+
 
 	
 
