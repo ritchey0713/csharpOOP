@@ -755,6 +755,9 @@ namespace oopLearn
 		//methods are ran first
 		sayHello();
 
+		//lambda 
+		GetTextDelegate getHelloText = (string name) => {return "hello, " + name; };
+
 		} //</main>
 
 		static void Display(GetTextDelegate getTextDelegate){
