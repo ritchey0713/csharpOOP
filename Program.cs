@@ -779,11 +779,15 @@ namespace oopLearn
 
 		DisplayNum(lambdaProduct);
 
+		
 		//events 
 		// enables comms between objs 
 		// cleaner code
 		// enables subscribver to listen to sender 
-		
+		// delegate is a contract between publisher and subscriber 
+		// delegate determines signature of event 
+		// can hold multiple method pointers
+
 
 
 
