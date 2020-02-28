@@ -83,6 +83,8 @@ namespace oopLearn
 		//delegates 
 		public delegate double PerformCalculation(double x, double y);
 
+		public delegate string GetTextDelegate(string name);
+
 		public static double Addition(double a, double b){
 			System.Console.WriteLine(a + b);
 			return a + b;
@@ -92,8 +94,14 @@ namespace oopLearn
 			System.Console.WriteLine(a / b);
 			return (a / b);
 		}
+
+		public static double Subtraction(double a, double b){
+			System.Console.WriteLine(a - b);
+			return (a - b);
+		}
 		static void Main(string[] args) {
 
+			// set up pointers
 			PerformCalculation getSum = Addition;
 
 			getSum(5.0, 5.0);
@@ -102,8 +110,11 @@ namespace oopLearn
 
 			Division(5.0, 5.0);
 
+			// can set many pointers 
 			PerformCalculation multiCalc = getSum + getQuotient;
-
+			multiCalc += Subtraction;
+			multiCalc -= getSum;
+			// fire pointers once
 			multiCalc(5.0, 5.0);
 
 			Game game1;
@@ -732,8 +743,22 @@ namespace oopLearn
 		// use base type where inherited type was expected
 		//ex. using Stream where FileStream was expected
 
+		//anon functions only ran/compiled once required
+
+		GetTextDelegate getTextDelegate = delegate(string name){
+			return "Hello,  " + name;
+		};
+
+		System.Console.WriteLine(getTextDelegate("Tim"));
+
+		//methods are ran first
+		sayHello();
+
 		} //</main>
 
+		public static void sayHello(){
+			System.Console.WriteLine("Hello");
+		}
 
 		static DateTime GetTomorrow(){
 			return DateTime.Today.AddDays(1);
