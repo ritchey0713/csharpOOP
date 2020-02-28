@@ -12,6 +12,8 @@ namespace oopLearn
 	//reassigning emun index
 	enum Months {Jan = 1, Feb, Mar, Apr, May, Jun, Jul = 12, Aug, Sep, Oct, Nov, Dec}
 
+
+
 // if inheriting from interface you choose what methods HAVE to be included in the inheriting class
 // useful when only a small amount of things should be inherited, ie when you shouldnt have a full class to inherit from
 // interface = what to do 
@@ -77,7 +79,32 @@ namespace oopLearn
 			}
 
   class Program {
+
+		//delegates 
+		public delegate double PerformCalculation(double x, double y);
+
+		public static double Addition(double a, double b){
+			System.Console.WriteLine(a + b);
+			return a + b;
+		}
+
+		public static double Division(double a, double b){
+			System.Console.WriteLine(a / b);
+			return (a / b);
+		}
 		static void Main(string[] args) {
+
+			PerformCalculation getSum = Addition;
+
+			getSum(5.0, 5.0);
+
+			PerformCalculation getQuotient = Division;
+
+			Division(5.0, 5.0);
+
+			PerformCalculation multiCalc = getSum + getQuotient;
+
+			multiCalc(5.0, 5.0);
 
 			Game game1;
 			game1.name = "Pokemon";
@@ -691,6 +718,19 @@ namespace oopLearn
 		Cube cube2 = (Cube)cube1;
 
 		System.Console.WriteLine("Has a volume of {0}", cube2.Volume());
+
+		// delagates !! type based
+		// accepts methods as params
+		// used to define callbacks
+		// can be changed - important for events
+		// allow for use of anon functions
+
+		// covariance, using a very simlar class instead of expected type
+		//ex. using FileStream where Stream was expected
+
+		//Contravariance 
+		// use base type where inherited type was expected
+		//ex. using Stream where FileStream was expected
 
 		} //</main>
 
