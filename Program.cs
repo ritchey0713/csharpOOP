@@ -750,11 +750,16 @@ namespace oopLearn
 		};
 
 		System.Console.WriteLine(getTextDelegate("Tim"));
+		Display(getTextDelegate);
 
 		//methods are ran first
 		sayHello();
 
 		} //</main>
+
+		static void Display(GetTextDelegate getTextDelegate){
+			System.Console.WriteLine(getTextDelegate("hi"));
+		}
 
 		public static void sayHello(){
 			System.Console.WriteLine("Hello");
