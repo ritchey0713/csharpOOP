@@ -1,7 +1,6 @@
-namespace oopLearn
-{
-    public class File
-    {
-        
-    }
+namespace oopLearn {
+  public class File {
+		public string Title {get; set;}
+		
+  }
 }

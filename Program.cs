@@ -730,6 +730,14 @@ namespace oopLearn
 
 		System.Console.WriteLine("Has a volume of {0}", cube2.Volume());
 
+		var file = new File() {Title = "File stuff"};
+		var downloadHelper = new Download();
+
+		downloadHelper.DownloadFile(file);
+
+
+
+
 		// delagates !! type based
 		// accepts methods as params
 		// used to define callbacks
@@ -779,7 +787,7 @@ namespace oopLearn
 
 		DisplayNum(lambdaProduct);
 
-		
+
 		//events 
 		// enables comms between objs 
 		// cleaner code
