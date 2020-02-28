@@ -755,13 +755,37 @@ namespace oopLearn
 		//methods are ran first
 		sayHello();
 
-		//lambda 
+		//expression lambda (single thing executes)
 		GetTextDelegate getHelloText = (string name) => {return "hello, " + name; };
 
+		//statement lambda (multi things execute)
+		GetTextDelegate getGoodbyeText = (string name) => {
+			System.Console.WriteLine("Inside statement");
+			// return optional
+			return "goodbye";
+		};
+
+		// shorthand expression lambda, only works with single argument expressions
+		GetTextDelegate getWelcomeText = name => "welcome, " + name;
+
+		// use performCalc because it expects 2 args
+		PerformCalculation lambdaSum = (a,b) =>  a + b;
+
+		PerformCalculation lambdaProduct = (a,b) => a * b;
+
+		System.Console.WriteLine(getWelcomeText("Tim"));
+
+		DisplayNum(lambdaSum);
+
+		DisplayNum(lambdaProduct);
 		} //</main>
 
 		static void Display(GetTextDelegate getTextDelegate){
 			System.Console.WriteLine(getTextDelegate("hi"));
+		}
+
+		static void DisplayNum(PerformCalculation lambdaResult){
+			System.Console.WriteLine(lambdaResult(10, 10));
 		}
 
 		public static void sayHello(){
