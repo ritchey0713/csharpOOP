@@ -778,6 +778,15 @@ namespace oopLearn
 		DisplayNum(lambdaSum);
 
 		DisplayNum(lambdaProduct);
+
+		//events 
+		// enables comms between objs 
+		// cleaner code
+		// enables subscribver to listen to sender 
+		
+
+
+
 		} //</main>
 
 		static void Display(GetTextDelegate getTextDelegate){
