@@ -769,7 +769,7 @@ namespace oopLearn
 			// return optional
 			return "goodbye";
 		};
-
+	
 		// shorthand expression lambda, only works with single argument expressions
 		GetTextDelegate getWelcomeText = name => "welcome, " + name;
 
