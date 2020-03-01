@@ -794,7 +794,7 @@ namespace oopLearn
 			var downloadHelper = new Download(); //PUBLISHER (creating event)
 			var unpackService = new UnpackService(); // receiver 
 			var notification = new NotificationService(); //receiver 
-			downloadHelper.FileDownloaded += unpackService.OnFileDownloaded; //(subscribe to event)
+			downloadHelper.FileDownloaded += unpackService.OnFileDownloaded; //(subscribe to event) when publisher event fires, fires all subscriber events subscribed to event
 			downloadHelper.FileDownloaded += notification.OnFileDownloaded;
 
 			downloadHelper.DownloadFile(file);
