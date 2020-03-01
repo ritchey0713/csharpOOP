@@ -12,14 +12,20 @@ namespace oopLearn {
 
 		// raise event
 		protected virtual void OnFileDownloaded(){
+			// check for subscribers to event if something is subscribed, event will not be null, even though it was never assigned a value
 			if(FileDownloaded != null){
-
+				FileDownloaded(this, EventArgs.Empty);
 			}
 		}
 		
 		public void DownloadFile(File file){
 			System.Console.WriteLine("downloading...");
 			Thread.Sleep(4000);
+
+			// raise event 
+			OnFileDownloaded();
 		}
   }
+
+
 }
