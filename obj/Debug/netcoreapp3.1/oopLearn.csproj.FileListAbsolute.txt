@@ -9,3 +9,14 @@
 /home/maveryk/Desktop/code/oopLearn/obj/Debug/netcoreapp3.1/oopLearn.AssemblyInfo.cs
 /home/maveryk/Desktop/code/oopLearn/obj/Debug/netcoreapp3.1/oopLearn.dll
 /home/maveryk/Desktop/code/oopLearn/obj/Debug/netcoreapp3.1/oopLearn.pdb
+d:\code\csharpOOP\bin\Debug\netcoreapp3.1\oopLearn.exe
+D:\code\csharpOOP\bin\Debug\netcoreapp3.1\oopLearn.deps.json
+D:\code\csharpOOP\bin\Debug\netcoreapp3.1\oopLearn.runtimeconfig.json
+D:\code\csharpOOP\bin\Debug\netcoreapp3.1\oopLearn.runtimeconfig.dev.json
+d:\code\csharpOOP\bin\Debug\netcoreapp3.1\oopLearn.dll
+d:\code\csharpOOP\bin\Debug\netcoreapp3.1\oopLearn.pdb
+d:\code\csharpOOP\obj\Debug\netcoreapp3.1\oopLearn.csprojAssemblyReference.cache
+d:\code\csharpOOP\obj\Debug\netcoreapp3.1\oopLearn.AssemblyInfoInputs.cache
+d:\code\csharpOOP\obj\Debug\netcoreapp3.1\oopLearn.AssemblyInfo.cs
+d:\code\csharpOOP\obj\Debug\netcoreapp3.1\oopLearn.dll
+d:\code\csharpOOP\obj\Debug\netcoreapp3.1\oopLearn.pdb

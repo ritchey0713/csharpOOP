@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/maveryk/.dotnet/store/|arch|/|tfm|",
-      "/home/maveryk/.nuget/packages"
+      "C:\\Users\\ritch\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ritch\\.nuget\\packages"
     ]
   }
 }
