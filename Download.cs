@@ -17,16 +17,10 @@ namespace oopLearn {
 		// c# built in eventhandler 
 		//EventHandler<FileEventArgs>
 
-		// create an event based on delegate  
+		// create an event based on delegate
+		//public event FileDownloadedEventHandler FileDownloaded;  
 		public event EventHandler<FileEventArgs> FileDownloaded;
 
-		// raise event
-		protected virtual void OnFileDownloaded(File file){
-			// check for subscribers to event if something is subscribed, event will not be null, even though it was never assigned a value
-			if(FileDownloaded != null){
-				FileDownloaded(this, new FileEventArgs() {File = file});
-			}
-		}
 		
 		public void DownloadFile(File file){
 			System.Console.WriteLine("downloading...");
@@ -34,6 +28,15 @@ namespace oopLearn {
 
 			// raise event 
 			OnFileDownloaded(file);
+		}
+		
+		// raise event
+		protected virtual void OnFileDownloaded(File file){
+			// check for subscribers to event if something is subscribed, event will not be null, even though it was never assigned a value
+			if(FileDownloaded != null){
+				// source will point to object calling event, this class 
+				FileDownloaded(this, new FileEventArgs() {File = file});
+			}
 		}
   }
 
