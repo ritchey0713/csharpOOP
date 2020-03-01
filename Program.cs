@@ -12,8 +12,6 @@ namespace oopLearn
 	//reassigning emun index
 	enum Months {Jan = 1, Feb, Mar, Apr, May, Jun, Jul = 12, Aug, Sep, Oct, Nov, Dec}
 
-
-
 // if inheriting from interface you choose what methods HAVE to be included in the inheriting class
 // useful when only a small amount of things should be inherited, ie when you shouldnt have a full class to inherit from
 // interface = what to do 
@@ -792,11 +790,12 @@ namespace oopLearn
 		// can hold multiple method pointers
 
 			var file = new File() {Title = "File stuff"};
+
 			var downloadHelper = new Download(); //PUBLISHER (creating event)
 			var unpackService = new UnpackService(); // receiver 
 			var notification = new NotificationService(); //receiver 
 			downloadHelper.FileDownloaded += unpackService.OnFileDownloaded; //(subscribe to event)
-			downloadHelper.FileDownloaded += notification.OnDownloadedFile;
+			downloadHelper.FileDownloaded += notification.OnFileDownloaded;
 
 			downloadHelper.DownloadFile(file);
 
