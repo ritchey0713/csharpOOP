@@ -781,23 +781,25 @@ namespace oopLearn
 
 
 
-		//events 
-		// enables comms between objs 
-		// cleaner code
-		// enables subscribver to listen to sender 
-		// delegate is a contract between publisher and subscriber 
-		// delegate determines signature of event 
-		// can hold multiple method pointers
+			//events 
+			// enables comms between objs 
+			// cleaner code
+			// enables subscribver to listen to sender 
+			// delegate is a contract between publisher and subscriber 
+			// delegate determines signature of event 
+			// can hold multiple method pointers
 
-			var file = new File() {Title = "File stuff"};
+			//var file = new File() {Title = "File stuff"};
 
-			var downloadHelper = new Download(); //PUBLISHER (creating event)
-			var unpackService = new UnpackService(); // receiver 
-			var notification = new NotificationService(); //receiver 
-			downloadHelper.FileDownloaded += unpackService.OnFileDownloaded; //(subscribe to event) when publisher event fires, fires all subscriber events subscribed to event
-			downloadHelper.FileDownloaded += notification.OnFileDownloaded;
+			//var downloadHelper = new Download(); //PUBLISHER (creating event)
+			//var unpackService = new UnpackService(); // receiver 
+			//var notification = new NotificationService(); //receiver 
+			//downloadHelper.FileDownloaded += unpackService.OnFileDownloaded; //(subscribe to event) when publisher event fires, fires all subscriber events subscribed to event
+			//downloadHelper.FileDownloaded += notification.OnFileDownloaded;
 
-			downloadHelper.DownloadFile(file);
+			//downloadHelper.DownloadFile(file);
+
+			int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 
 
