@@ -871,12 +871,13 @@ namespace oopLearn
 										 select new {
 											 Name = student.Element("Name").Value,
 											 Age = student.Element("Age").Value,
-											 University = student.Element("University").Value
+											 University = student.Element("University").Value,
+											 Major = student.Element("Major").Value
 										 };
 
 			foreach(var student in students)
 			{
-				Console.WriteLine("Name {0}, age {1}, uni {2}", student.Name, student.Age, student.University);
+				Console.WriteLine("Name {0}, age {1}, uni {2} major {3}", student.Name, student.Age, student.University, student.Major);
 			}
 
 			var sortedStudents = from student in students
