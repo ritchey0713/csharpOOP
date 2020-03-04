@@ -818,7 +818,7 @@ namespace oopLearn
 			////int id = Convert.ToInt32(input)
 			//universityManager.FindStudentsBySchoolId(input);
 
-			universityManager.StudentAndUniversityCollection();
+			//universityManager.StudentAndUniversityCollection();
 
 			//int[] SomeInt = { 30, 15, 12, 10, 6 };
 			//// asc
@@ -831,6 +831,27 @@ namespace oopLearn
 			//{
 			//	Console.WriteLine(i);
 			//}
+
+			// xml string 
+
+			string studentXml =
+				@"<Students>
+						<Student>
+							<Name>Jon</Name>
+							<Age>20</Age>
+							<University>OSU</University>
+						</Student>
+						<Student>
+							<Name>Sally</Name>
+							<Age>30</Age>
+							<University>Yale</University>
+						</Student>
+						<Student>
+							<Name>Terry</Name>
+							<Age>25</Age>
+							<University>OSU</University>
+						</Student>
+					</Students>";
 
 		
 
