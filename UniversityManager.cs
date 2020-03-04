@@ -77,5 +77,33 @@ namespace oopLearn
       }
     }
 
+    public void FindStudentsBySchoolId(string input)
+    {
+      int id;
+      Int32.TryParse(input, out id);
+      if(id > 0)
+      {
+        //IEnumerable<Student> foundStudents = from student in students
+        //                                     join university in universities on student.UniversityId
+        //                                     equals university.Id
+        //                                     where university.Id == id
+        //                                     select student;
+
+        IEnumerable<Student> foundStudents = from student in students
+                                             where student.UniversityId == id
+                                             select student;
+
+        Console.WriteLine("Found students:");
+        foreach(Student student in foundStudents)
+        {
+          student.Print();
+        }
+      }
+      else
+      {
+        Console.WriteLine("Oops bad id given");
+      }
+    }
+
   } // end university manager
 }

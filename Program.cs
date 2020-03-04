@@ -805,11 +805,16 @@ namespace oopLearn
 
 			UniversityManager universityManager = new UniversityManager();
 
-			universityManager.MaleStudents();
+			//universityManager.MaleStudents();
 
-			universityManager.SortStudentsByAge();
+			//universityManager.SortStudentsByAge();
 
-			universityManager.AllStudentsFromOsu();
+			//universityManager.AllStudentsFromOsu();
+
+
+			Console.WriteLine("Please enter a school id");
+			string input = Console.ReadLine();
+			universityManager.FindStudentsBySchoolId(input);
 
 
 
