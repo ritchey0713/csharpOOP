@@ -17,7 +17,7 @@ namespace oopLearn
       students = new List<Student>();
 
       universities.Add(new University { Id = 1, Name = "Osu" });
-      universities.Add(new University { Id = 1, Name = "Stanford" });
+      universities.Add(new University { Id = 2, Name = "Stanford" });
 
       students.Add(new Student { Id = 1, Name = "John", Gender = "Male", Age = 22, UniversityId = 1 });
       students.Add(new Student { Id = 2, Name = "Sarah", Gender = "Female", Age = 19, UniversityId = 2 });
@@ -83,15 +83,15 @@ namespace oopLearn
       Int32.TryParse(input, out id);
       if(id > 0)
       {
-        //IEnumerable<Student> foundStudents = from student in students
-        //                                     join university in universities on student.UniversityId
-        //                                     equals university.Id
-        //                                     where university.Id == id
-        //                                     select student;
-
         IEnumerable<Student> foundStudents = from student in students
-                                             where student.UniversityId == id
+                                             join university in universities on student.UniversityId
+                                             equals university.Id
+                                             where university.Id == id
                                              select student;
+
+        //IEnumerable<Student> foundStudents = from student in students
+        //                                     where student.UniversityId == id
+        //                                     select student;
 
         Console.WriteLine("Found students:");
         foreach(Student student in foundStudents)
