@@ -6,5 +6,7 @@ namespace oopLearn
 {
   class UniversityManager
   {
+    public List<University> universities;
+    public List<Student> students;
   }
 }
