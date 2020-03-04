@@ -809,6 +809,8 @@ namespace oopLearn
 
 			universityManager.SortStudentsByAge();
 
+			universityManager.AllStudentsFromOsu();
+
 
 
 		} //</main>

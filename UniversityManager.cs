@@ -62,5 +62,20 @@ namespace oopLearn
       }
     }
 
+    public void AllStudentsFromOsu()
+    {
+      IEnumerable<Student> OsuStudents = from student in students
+                                         join university in universities on student.UniversityId
+                                         equals university.Id
+                                         where university.Name == "Osu"
+                                         select student;
+
+      Console.WriteLine("Students from OSU");
+      foreach(Student student in OsuStudents)
+      {
+        student.Print();
+      }
+    }
+
   } // end university manager
 }
