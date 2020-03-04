@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace oopLearn
 {
@@ -853,7 +854,31 @@ namespace oopLearn
 						</Student>
 					</Students>";
 
-		
+			XDocument studentXdoc = new XDocument();
+
+			studentXdoc = XDocument.Parse(studentXml);
+
+			var students = from student in studentXdoc.Descendants("Student")
+										 select new {
+											 Name = student.Element("Name").Value,
+											 Age = student.Element("Age").Value,
+											 University = student.Element("University").Value
+										 };
+
+			foreach(var student in students)
+			{
+				Console.WriteLine("Name {0}, age {1}, uni {2}", student.Name, student.Age, student.University);
+			}
+
+			var sortedStudents = from student in students
+													 orderby student.Age
+													 select student;
+
+			foreach (var student in sortedStudents)
+			{
+				Console.WriteLine("Name {0}, age {1}, uni {2}", student.Name, student.Age, student.University);
+			}
+
 
 		} //</main>
 
