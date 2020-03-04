@@ -818,18 +818,21 @@ namespace oopLearn
 			////int id = Convert.ToInt32(input)
 			//universityManager.FindStudentsBySchoolId(input);
 
-			int[] SomeInt = { 30, 15, 12, 10, 6 };
-			// asc
-			IEnumerable<int> sortedInts = from i in SomeInt orderby i select i;
-			//desc 
-			IEnumerable<int> Descsort = from i in SomeInt orderby i descending select i;
+			universityManager.StudentAndUniversityCollection();
 
-			Console.WriteLine("desc");
-			foreach(int i in Descsort)
-			{
-				Console.WriteLine(i);
-			}
+			//int[] SomeInt = { 30, 15, 12, 10, 6 };
+			//// asc
+			//IEnumerable<int> sortedInts = from i in SomeInt orderby i select i;
+			////desc 
+			//IEnumerable<int> Descsort = from i in SomeInt orderby i descending select i;
 
+			//Console.WriteLine("desc");
+			//foreach(int i in Descsort)
+			//{
+			//	Console.WriteLine(i);
+			//}
+
+		
 
 		} //</main>
 

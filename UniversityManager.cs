@@ -105,5 +105,21 @@ namespace oopLearn
       }
     }
 
+    public void StudentAndUniversityCollection()
+    {
+      // create new collection, creates a collection with student names and uni names
+      var newCollection = from student in students
+                          join university in universities
+                          on student.UniversityId equals university.Id
+                          orderby student.Name
+                          select new { StudentName = student.Name, UniversityName = university.Name };
+
+      Console.WriteLine("New collection:");
+      foreach (var col in newCollection)
+      {
+        Console.WriteLine("student {0} from uni {1}", col.StudentName, col.UniversityName);
+      };
+    }
+
   } // end university manager
 }
