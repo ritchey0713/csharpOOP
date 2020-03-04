@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace oopLearn
 {
@@ -801,11 +801,27 @@ namespace oopLearn
 
 			int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
+			OddNumbers(numbers);
+
 
 
 
 
 		} //</main>
+
+		static void OddNumbers(int[] nums)
+		{
+			Console.WriteLine("Odds: ");
+
+			IEnumerable<int> oddNumbers = from number in nums where number % 2 != 0 select number;
+
+			Console.WriteLine(oddNumbers);
+
+			foreach(int i in oddNumbers)
+			{
+				Console.WriteLine(i);
+			}
+		}
 
 		static void Display(GetTextDelegate getTextDelegate){
 			System.Console.WriteLine(getTextDelegate("hi"));
