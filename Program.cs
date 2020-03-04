@@ -803,7 +803,9 @@ namespace oopLearn
 
 			//OddNumbers(numbers);
 
+			UniversityManager universityManager = new UniversityManager();
 
+			universityManager.MaleStudents();
 
 
 
