@@ -841,16 +841,25 @@ namespace oopLearn
 							<Name>Jon</Name>
 							<Age>20</Age>
 							<University>OSU</University>
+							<Major>CS</Major>
 						</Student>
 						<Student>
 							<Name>Sally</Name>
 							<Age>30</Age>
 							<University>Yale</University>
+							<Major>Medicine</Major>
 						</Student>
 						<Student>
 							<Name>Terry</Name>
 							<Age>25</Age>
 							<University>OSU</University>
+							<Major>Business</Major>
+						</Student>
+						<Student>
+							<Name>Kyle</Name>
+							<Age>21</Age>
+							<University>Yale</University>
+							<Major>Welding Engineering</Major>
 						</Student>
 					</Students>";
 
