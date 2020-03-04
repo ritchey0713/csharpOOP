@@ -814,6 +814,8 @@ namespace oopLearn
 
 			Console.WriteLine("Please enter a school id");
 			string input = Console.ReadLine();
+			// can convert int here 
+			//int id = Convert.ToInt32(input)
 			universityManager.FindStudentsBySchoolId(input);
 
 
