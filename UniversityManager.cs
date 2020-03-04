@@ -50,5 +50,17 @@ namespace oopLearn
     
     }
 
+    public void SortStudentsByAge()
+    {
+      // this is ookay but typically runs slower/ is lazier
+      var sortedStudents = from student in students orderby student.Age select student; 
+
+        Console.WriteLine("Sorted by age");
+      foreach(Student student in sortedStudents)
+      {
+        student.Print();
+      }
+    }
+
   } // end university manager
 }
