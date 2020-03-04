@@ -39,5 +39,16 @@ namespace oopLearn
       }
     }
 
+    public void FemaleStudents()
+    {
+      IEnumerable<Student> femaleStudents = from student in students where student.Gender == "Female" select student;
+      
+      foreach(Student student in femaleStudents)
+      {
+        student.Print();
+      }
+    
+    }
+
   } // end university manager
 }
